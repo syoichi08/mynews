@@ -8,7 +8,7 @@ class News extends Model
 {
     protected $guarded = array('id');
 
-    // 以下を追記
+    // 以下を追記(バリデーション)
     public static $rules = array(
         'title' => 'required',
         'body' => 'required',
