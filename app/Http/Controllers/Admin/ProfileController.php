@@ -26,9 +26,7 @@ public function create(Request $request)
 
       // フォームから送信されてきた_tokenを削除する
       unset($form['_token']);
-      // フォームから送信されてきたimageを削除する
-      unset($form['image']);
-
+      
       // データベースに保存する
       $profile->fill($form);
       $profile->save();
