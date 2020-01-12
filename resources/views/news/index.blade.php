@@ -1,6 +1,7 @@
 @extends('layouts.front')
 
 @section('content')
+テスト
     <div class="container">
         <hr color="#c0c0c0">
         @if (!is_null($headline))
